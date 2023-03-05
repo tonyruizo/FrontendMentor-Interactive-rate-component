@@ -1,0 +1,125 @@
+@import "config", "submitState";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $veryDarkBlue;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  height: 100vh;
+  @include centerIt;
+}
+
+.card-container {
+  height: 360px;
+  width: 340px;
+  border-radius: 20px;
+  background: linear-gradient($darkBlue 10%, hsl(214, 12%, 12%));
+  @include centerIt;
+  flex-direction: column;
+
+  .inner-container {
+    height: inherit;
+    width: inherit;
+    padding: 25px;
+  }
+
+  .star-logo {
+    img {
+      width: 43px;
+      background-color: hsla(207, 10%, 21%, 0.724);
+      padding: 14px;
+      border-radius: 50%;
+    }
+
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .heading {
+    h1 {
+      color: $white;
+      font-size: 1.5rem;
+    }
+
+    margin: 10px 0;
+  }
+
+  .body-para {
+    p {
+      color: $mediumGrey;
+      line-height: 1.4;
+      font-size: 0.9rem;
+    }
+
+    padding-bottom: 10px;
+  }
+
+  .ratings ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 22px;
+
+    .item {
+      background-color: $darkBlue;
+      @include centerIt;
+      padding: 22px;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      color: $lightGrey;
+      font-size: 0.7rem;
+
+      &:hover {
+        background-color: $primaryColor;
+        color: $white;
+      }
+    }
+
+    .activeItem {
+      background-color: $mediumGrey;
+      color: $white;
+    }
+  }
+
+  button {
+    width: 100%;
+    border-radius: 30px;
+    padding: 15px;
+    background-color: $primaryColor;
+    color: $white;
+    border: none;
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $white;
+      color: $primaryColor;
+    }
+  }
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}

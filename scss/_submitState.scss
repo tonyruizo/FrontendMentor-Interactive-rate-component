@@ -1,0 +1,43 @@
+.submit-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: inherit;
+  width: inherit;
+
+  img {
+    margin-top: 35px;
+    width: 140px;
+    margin-bottom: 25px;
+  }
+
+  .selection {
+    margin-bottom: 15px;
+  }
+
+  .selection-p {
+    color: lighten($primaryColor, 10%);
+    padding: 8px 12px;
+    background-color: lighten($darkBlue, 2%);
+    border-radius: 25px;
+    font-size: 0.9rem;
+  }
+
+  .heading {
+    color: $white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding-bottom: 3px;
+  }
+
+  .description {
+    p {
+      color: $mediumGrey;
+      font-size: 0.9rem;
+      width: 300px;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+  }
+}

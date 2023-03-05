@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap');
+
+$primaryColor: hsl(25, 97%, 53%);
+
+// Neutral colors
+$white: hsl(0, 0%, 100%);
+$lightGrey: hsl(217, 12%, 63%);
+$mediumGrey: hsl(216, 12%, 54%);
+$darkBlue: hsl(213, 19%, 18%); 
+$veryDarkBlue: hsl(216, 12%, 8%);
+
+
+@mixin centerIt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

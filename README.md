@@ -23,8 +23,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live site here]()
+- Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/interactiveratingcomponent-lYJja4s9rz)
+- Live Site URL: [https://interactive-rating-tonyruizo.netlify.app/](https://interactive-rating-tonyruizo.netlify.app)
 
 ## Author
 
